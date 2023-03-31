@@ -14,10 +14,33 @@
     <name>demo-westpac</name>
     <description>demo-westpac</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>12</java.version>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <swagger-core-version>1.5.9</swagger-core-version>
+        <jetty-version>9.2.9.v20150224</jetty-version>
+        <jersey2-version>2.22.2</jersey2-version>
+        <junit-version>4.12</junit-version>
+        <logback-version>1.1.7</logback-version>
+        <servlet-api-version>2.5</servlet-api-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <powermock-version>2.0.5</powermock-version>
+        <mockito.version>2.18.0</mockito.version>
+        <!-- <env.resources>env/local</env.resources> <default.resources>env/default</default.resources>
+            <mocks.resources>mocks</mocks.resources> -->
+        <javax.activation.version>1.2.0</javax.activation.version>
+        <jaxb.api.version>2.3.0</jaxb.api.version>
+        <lombok.version>1.18.6</lombok.version>
+        <ibm.mq.version>9.0.0</ibm.mq.version>
+        <spring-version>5.3.18</spring-version>
     </properties>
     <dependencies>
-
+       <dependency>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-surefire-plugin</artifactId>
+         <version>2.12.4</version>
+       </dependency>
     </dependencies>
 
     <build>
